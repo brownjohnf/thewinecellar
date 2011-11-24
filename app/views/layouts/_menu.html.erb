@@ -1,0 +1,28 @@
+<ul class="menu">
+  <% if signed_in? %>
+  <li><%= current_user.name + ', ' + current_user.email %></li>
+  <li><%= link_to 'home', root_path  %></li>
+  <li>|</li>
+  <% end %>
+  <li><%= link_to 'Add Bottle', new_bottle_path %></li>
+  <% if signed_in? %>
+    <% if current_user.admin? %>
+    <li><%= link_to 'users', users_path %></li>
+    <li><%= link_to 'cellars', cellars_path %></li>
+    <li><%= link_to 'bottles', bottles_path %></li>
+    <li><%= link_to 'owners', owners_path %></li>
+    <li><%= link_to 'offerings', offerings_path %></li>
+    <li><%= link_to 'producers', producers_path %></li>
+    <li><%= link_to 'compositions', compositions_path %></li>
+    <li><%= link_to 'grapes', grapes_path %></li>
+    <li><%= link_to 'regions', regions_path %></li>
+    <li><%= link_to 'countries', countries_path %></li>
+    <li><%= link_to 'colors', colors_path %></li>
+    <li><%= link_to 'formats', formats_path %></li>
+  <% end %>
+  <li>|</li>
+    <li><%= link_to 'Sign out', signout_path, :method => :delete %>
+  <% else %>
+  <li><%= link_to "Sign in", signin_path %></li>
+<% end %>
+</ul>

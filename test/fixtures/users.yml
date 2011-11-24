@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: 
+  email: 
+  bio: 
+  phone: 
+  encrypted_password: 
+  salt: 
+  admin: 
+  moderator: false
+
+two:
+  name: 
+  email: 
+  bio: 
+  phone: 
+  encrypted_password: 
+  salt: 
+  admin: 
+  moderator: false

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  grape_id: 1
+  offering_id: 1
+
+two:
+  grape_id: 1
+  offering_id: 1

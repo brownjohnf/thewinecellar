@@ -1,0 +1,33 @@
+<%= form_for(@grape) do |f| %>
+  <% if @grape.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@grape.errors.count, "error") %> prohibited this grape from being saved:</h2>
+
+      <ul>
+      <% @grape.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :scientific_name %><br />
+    <%= f.text_field :scientific_name %>
+  </div>
+  <div class="field">
+    <%= f.label :common_name %><br />
+    <%= f.text_field :common_name %>
+  </div>
+  <div class="field">
+    <%= f.label :color_id %><br />
+    <%= f.text_field :color_id %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

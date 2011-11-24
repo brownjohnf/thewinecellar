@@ -1,0 +1,47 @@
+ul.menu, ul.menu li {
+  display: inline;
+  list-style: none;
+  padding: 0 5px;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+div#not_signed_in {
+  margin: 0 auto;
+  width: 980px;
+  padding: 200px 0;
+}
+
+div#not_signed_in p {
+  text-align: center;
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+table#new_ticket td {
+  vertical-align: top;
+}
+
+table textarea {
+  height: 75px;
+}
+
+footer p {
+  padding: 0 10px;
+}
+
+div#signin {
+  margin: 0 auto;
+  width: 200px;
+  padding: 100px 0;
+}

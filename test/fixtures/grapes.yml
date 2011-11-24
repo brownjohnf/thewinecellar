@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  scientific_name: MyString
+  common_name: MyString
+  color_id: 1
+  description: MyString
+
+two:
+  scientific_name: MyString
+  common_name: MyString
+  color_id: 1
+  description: MyString

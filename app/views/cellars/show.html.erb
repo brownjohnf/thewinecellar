@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @cellar.name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @cellar.location %>
+</p>
+
+<p>
+  <b>Private:</b>
+  <%= @cellar.private %>
+</p>
+
+
+<%= link_to 'Edit', edit_cellar_path(@cellar) %> |
+<%= link_to 'Back', cellars_path %>

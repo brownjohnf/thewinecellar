@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Scientific name:</b>
+  <%= @grape.scientific_name %>
+</p>
+
+<p>
+  <b>Common name:</b>
+  <%= @grape.common_name %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @grape.color_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @grape.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_grape_path(@grape) %> |
+<%= link_to 'Back', grapes_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  producer_id: 1
+  color_id: 1
+  description: MyString
+
+two:
+  name: MyString
+  producer_id: 1
+  color_id: 1
+  description: MyString

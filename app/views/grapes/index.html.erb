@@ -1,0 +1,29 @@
+<h1>Listing grapes</h1>
+
+<table>
+  <tr>
+    <th>Scientific name</th>
+    <th>Common name</th>
+    <th>Color</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @grapes.each do |grape| %>
+  <tr>
+    <td><%= grape.scientific_name %></td>
+    <td><%= grape.common_name %></td>
+    <td><%= grape.color_id %></td>
+    <td><%= grape.description %></td>
+    <td><%= link_to 'Show', grape %></td>
+    <td><%= link_to 'Edit', edit_grape_path(grape) %></td>
+    <td><%= link_to 'Destroy', grape, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Grape', new_grape_path %>
