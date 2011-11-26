@@ -13,11 +13,11 @@
 
   <div class="field">
     <%= f.label :cellar_id %><br />
-    <%= f.text_field :cellar_id %>
+    <%= f.collection_select(:cellar_id, Cellar.all, :id, :name) %>
   </div>
   <div class="field">
     <%= f.label :offering_id %><br />
-    <%= f.text_field :offering_id %>
+    <%= f.collection_select(:offering_id, Offering.all, :id, :name) %>
   </div>
   <div class="field">
     <%= f.label :year %><br />
@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :format_id %><br />
-    <%= f.text_field :format_id %>
+    <%= f.collection_select(:format_id, Format.all, :id, :name) %>
   </div>
   <div class="actions">
     <%= f.submit %>

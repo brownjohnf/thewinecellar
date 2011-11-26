@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :region_id %><br />
-    <%= f.text_field :region_id %>
+    <%= f.collection_select(:region_id, Region.all, :id, :name) %>
   </div>
   <div class="field">
     <%= f.label :description %><br />

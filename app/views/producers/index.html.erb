@@ -13,7 +13,7 @@
 <% @producers.each do |producer| %>
   <tr>
     <td><%= producer.name %></td>
-    <td><%= producer.region_id %></td>
+    <td><%= producer.region.name %></td>
     <td><%= producer.description %></td>
     <td><%= link_to 'Show', producer %></td>
     <td><%= link_to 'Edit', edit_producer_path(producer) %></td>

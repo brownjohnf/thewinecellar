@@ -14,7 +14,7 @@
   <tr>
     <td><%= region.name %></td>
     <td><%= region.description %></td>
-    <td><%= region.country_id %></td>
+    <td><%= region.country.name %></td>
     <td><%= link_to 'Show', region %></td>
     <td><%= link_to 'Edit', edit_region_path(region) %></td>
     <td><%= link_to 'Destroy', region, :confirm => 'Are you sure?', :method => :delete %></td>

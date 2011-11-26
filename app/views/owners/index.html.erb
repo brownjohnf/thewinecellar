@@ -11,8 +11,8 @@
 
 <% @owners.each do |owner| %>
   <tr>
-    <td><%= owner.user_id %></td>
-    <td><%= owner.cellar_id %></td>
+    <td><%= owner.user.name %></td>
+    <td><%= owner.cellar.name %></td>
     <td><%= link_to 'Show', owner %></td>
     <td><%= link_to 'Edit', edit_owner_path(owner) %></td>
     <td><%= link_to 'Destroy', owner, :confirm => 'Are you sure?', :method => :delete %></td>

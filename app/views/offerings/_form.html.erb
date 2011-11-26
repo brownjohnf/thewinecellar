@@ -17,11 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :producer_id %><br />
-    <%= f.text_field :producer_id %>
+    <%= f.collection_select(:producer_id, Producer.all, :id, :name) %>
   </div>
   <div class="field">
     <%= f.label :color_id %><br />
-    <%= f.text_field :color_id %>
+    <%= f.collection_select(:color_id, Color.all, :id, :name) %>
   </div>
   <div class="field">
     <%= f.label :description %><br />

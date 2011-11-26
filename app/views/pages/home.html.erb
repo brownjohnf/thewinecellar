@@ -1,5 +1,12 @@
 <% if signed_in? %>
-<p>You currently have <%= pluralize(@cellars.count, 'cellar') %>, containing <%= pluralize(@bottles.count, 'bottle') %> of wine.
+<p>You currently have <%= pluralize(@cellars.count, 'cellar') %>, containing <%= pluralize(@bottles.count, 'bottle') %> of wine.</p>
+
+  <% @cellars.each do |c| %>
+    <% @bottles = c.bottles %>
+    <h2><%= c.name %></h2>
+    <%= render 'bottles/bottle_set' %>
+
+  <% end %>
 <% else %>
 <div id="not_signed_in">
 <p>You have reached The Wine Cellar. Please <%= link_to 'sign in', signin_path %> or <%= link_to 'sign up', signup_path %>.</p>

@@ -11,8 +11,8 @@
 
 <% @compositions.each do |composition| %>
   <tr>
-    <td><%= composition.grape_id %></td>
-    <td><%= composition.offering_id %></td>
+    <td><%= composition.grape.common_name %></td>
+    <td><%= composition.offering.name %></td>
     <td><%= link_to 'Show', composition %></td>
     <td><%= link_to 'Edit', edit_composition_path(composition) %></td>
     <td><%= link_to 'Destroy', composition, :confirm => 'Are you sure?', :method => :delete %></td>

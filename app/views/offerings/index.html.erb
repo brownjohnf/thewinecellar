@@ -14,8 +14,8 @@
 <% @offerings.each do |offering| %>
   <tr>
     <td><%= offering.name %></td>
-    <td><%= offering.producer_id %></td>
-    <td><%= offering.color_id %></td>
+    <td><%= offering.producer.name %></td>
+    <td><%= offering.color.name %></td>
     <td><%= offering.description %></td>
     <td><%= link_to 'Show', offering %></td>
     <td><%= link_to 'Edit', edit_offering_path(offering) %></td>
